@@ -5,11 +5,11 @@
 #' @export
 #' @param myname your name. Required.
 
-test <- function(query = ""){
-  if(query == ""){
-    stop("Tell me your query!")
+test <- function(myname = ""){
+  if(myname == ""){
+    stop("Tell me your name!")
   }
   list(
-    message = paste("test", query, "! This is", R.Version()$version.string)
+    message = paste("hello", myname, "! This is", R.Version()$version.string)
   )
 }
