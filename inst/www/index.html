@@ -21,12 +21,12 @@
         //disable the button to prevent multiple clicks
         $("#querybutton").attr("disabled", "disabled");
         
-        //read the value for 'myname'
-        var query = $("#searchbox").val();
+        //read the value for 'inputval'
+        var inputval = $("#searchbox").val();
         
         //perform the request
         var req = ocpu.rpc("test", {
-          query : query
+          inputval : inputval
         }, function(output){
           $("#output").text(output.message);
         });
