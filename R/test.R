@@ -10,6 +10,6 @@ test <- function(query = ""){
     stop("Tell me your query!")
   }
   list(
-    message = paste("hello", query, "! This is", R.Version()$version.string)
+    message = paste("test", query, "! This is", R.Version()$version.string)
   )
 }
