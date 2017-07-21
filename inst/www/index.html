@@ -22,7 +22,7 @@
         $("#querybutton").attr("disabled", "disabled");
         
         //read the value for 'myname'
-        var myname = $("#searchbox").val();
+        var query = $("#searchbox").val();
         
         //perform the request
         var req = ocpu.rpc("test", {
