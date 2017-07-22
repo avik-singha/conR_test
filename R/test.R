@@ -10,7 +10,7 @@ test <- function(inputval){
     stop("Tell me your name!")
   }
   list(
-      x <-rand(3)
+      x <-3
 #     message = paste("hello", inputval, "! This is", R.Version()$version.string)
       message = paste("Your query is relevent with quality score",x,".")
   )
