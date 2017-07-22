@@ -9,13 +9,15 @@ test <- function(inputval){
   if(inputval == ""){
     stop("Tell me your name!")
   }
-#   list(
-#     message = paste("hello", inputval, "! This is", R.Version()$version.string)
-#   )
-  library(data.table)
+  list(
+    library(data.table)
+    x<-data.table(Query=inputval,Result="Relevant")
+    message = paste("hello", inputval, "! This is", R.Version()$version.string)
+  )
+#   library(data.table)
 
-x<-data.table(Query=inputval,Result="Relevant")
-message = paste("hello", x, "! This is", R.Version()$version.string)
+# x<-data.table(Query=inputval,Result="Relevant")
+# message = paste("hello", x, "! This is", R.Version()$version.string)
   
   
 }
