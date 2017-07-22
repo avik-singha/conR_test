@@ -12,10 +12,10 @@ test <- function(inputval){
 #   list(
 #     message = paste("hello", inputval, "! This is", R.Version()$version.string)
 #   )
-#   library(data.table)
+  library(data.table)
 
-# x<-data.table(Query=inputval,Result="Relevant")
-# print(x)
+x<-data.table(Query=inputval,Result="Relevant")
+message = paste("hello", x, "! This is", R.Version()$version.string)
   
-  return inputval
+  
 }
