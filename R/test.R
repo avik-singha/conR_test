@@ -9,7 +9,11 @@ test <- function(inputval){
   if(inputval == ""){
     stop("Tell me your name!")
   }
-  list(
-    message = paste("hello", inputval, "! This is", R.Version()$version.string)
-  )
+#   list(
+#     message = paste("hello", inputval, "! This is", R.Version()$version.string)
+#   )
+  library(data.table)
+
+x<-data.table(Query=inputval,Result="Relevant")
+print(x)
 }
