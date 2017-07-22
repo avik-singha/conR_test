@@ -10,9 +10,9 @@ test <- function(inputval){
     stop("Tell me your name!")
   }
   list(
-    library(data.table)
-    x<-data.table(Query=inputval,Result="Relevant")
-    message = paste("hello", inputval, "! This is", R.Version()$version.string)
+      x <-rand(3)
+#     message = paste("hello", inputval, "! This is", R.Version()$version.string)
+      message = paste("Your query is relevent with quality score",x,".")
   )
 #   library(data.table)
 
