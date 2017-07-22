@@ -5,11 +5,11 @@
 #' @export
 #' @param myname your name. Required.
 
-test <- function(myname){
-  if(myname == ""){
+test <- function(inputval){
+  if(inputval == ""){
     stop("Tell me your name!")
   }
   list(
-    message = paste("hello", myname, "! This is", R.Version()$version.string)
+    message = paste("hello", inputval, "! This is", R.Version()$version.string)
   )
 }
