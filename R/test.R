@@ -17,5 +17,5 @@ test <- function(inputval){
 # x<-data.table(Query=inputval,Result="Relevant")
 # print(x)
   
-  cat(inputval)
+  return inputval
 }
